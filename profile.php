@@ -12,6 +12,12 @@ if ($conn) {
             $uimage = $data["image_path"];
         }
     }
+    if (isset($_POST["delete_acc"])) {
+        $delete_account = "DELETE FROM `register_sgm` WHERE id = " . $id;
+        if (mysqli_query($conn, $delete_account)) {
+            header("location:index.php");
+        }
+    }
 }
 ?>
 <!doctype html>
@@ -35,6 +41,7 @@ if ($conn) {
     <div class="container">
         <!--Personal Details-->
         <section class="personal-details">
+            <div class="personal-details-msg"></div>
             <div class="row">
                 <div class="col-md">
                     <h4>Personal information</h4>
@@ -77,7 +84,7 @@ if ($conn) {
 
         <!--Update Password-->
         <section class="update-pass">
-            <div id="alert-shower"></div>
+            <div id="update-alert"></div>
             <div class="row">
                 <div class="col-md">
                     <h4>Update Password</h4>
@@ -109,7 +116,7 @@ if ($conn) {
                             before deleting your account, please download any data or information that you wish to
                             retain.</p>
                         <div class="del-btn-acc text-end">
-                            <button class="btn btn-danger" id="delete_acc">DELETE ACCOUNT</button>
+                            <button class="btn btn-danger" name="delete_acc">DELETE ACCOUNT</button>
                         </div>
                     </form>
                 </div>
@@ -135,16 +142,18 @@ form_validation();
             e.preventDefault();
             const uname = $("#user-name").val();
             const uemail = $("#user-email").val();
-            $.ajax({
-                url: "ajax-update.php",
-                type: "POST",
-                data: {user_name: uname, user_email: uemail, uid:<?php echo $id; ?>, f_submit: "udata"},
-                success: function (data) {
-                    if (data == 1) {
-                        alert("Data Update");
+                $.ajax({
+                    url: "ajax-update.php",
+                    type: "POST",
+                    data: {user_name: uname, user_email: uemail, uid:<?php echo $id; ?>, f_submit: "udata"},
+                    success: function (data) {
+                        $(".personal-details-msg").fadeIn();
+                        $(".personal-details-msg").html(data);
+                        setTimeout(function () {
+                            $(".personal-details-msg").fadeOut(2000);
+                        },3000);
                     }
-                }
-            });
+                });
         });
 
         //Password Change
@@ -157,23 +166,12 @@ form_validation();
                 type: "POST",
                 data: {newpass: new_pass, confpass: conf_pass, uid:<?php echo $id; ?>, f_submit: "password"},
                 success: function (data) {
-                    if (data == 1) {
-                        alert("Password Update");
-                        $("#pass-form").trigger("reset");
-                    } else {
-                        $("#alert-shower").html(data);
-                    }
+                    $("#update-alert").fadeIn();
+                    $("#update-alert").html(data);
+                    setTimeout(function () {
+                        $("#update-alert").fadeOut(2000);
+                    },3000);
                 }
-            });
-        });
-
-        //    Delete Account
-        $("#delete_acc").on("click", function (e) {
-            e.preventDefault();
-            $.ajax({
-                url: "ajax-update.php",
-                type: "POST",
-                data: {uid:<?php echo $id; ?>, f_submit: "delete_account"},
             });
         });
     });

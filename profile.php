@@ -70,7 +70,7 @@ if ($conn) {
                 </div>
                 <div class="col-md shadow-sm">
                     <div class="img-shower">
-                        <img <?php echo "src='$uimage'"; ?> class="img-fluid" alt="Image"/>
+                        <img src="<?= $uimage?>" class="img-fluid" alt="Image"/>
                     </div>
                     <form action="profile.php" method="post" class="form-group">
                         <label class="form-text" for="user-pic">Upload New Profile Picture</label>
@@ -133,7 +133,6 @@ if ($conn) {
 <!--JS-->
 <?php
 import_js();
-form_validation();
 ?>
 
 <script type="text/javascript">

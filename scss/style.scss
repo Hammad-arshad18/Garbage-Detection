@@ -8,7 +8,7 @@
 
 //Variables
 $colr: #34d479;
-$pcol:#bcbbbb;
+$pcol: #bcbbbb;
 ::selection {
   background-color: $colr;
   color: white;
@@ -469,29 +469,34 @@ $pcol:#bcbbbb;
 }
 
 //About Us
-.problem-us{
+.problem-us {
   margin: 10px 0;
   padding: 15px 0;
-  .problem-content{
+
+  .problem-content {
     border: 2px solid $colr;
     padding: 10px;
-    .problem-heading{
-      h1{
+
+    .problem-heading {
+      h1 {
         color: $colr;
         font-weight: bolder;
         text-align: center;
       }
     }
-    .problem-text{
-      p{
+
+    .problem-text {
+      p {
         text-align: justify;
         color: black;
         font-weight: 600;
       }
     }
-    .problem-learn{
+
+    .problem-learn {
       text-align: center;
-      .btn-success{
+
+      .btn-success {
         width: 140px;
         background-color: $colr !important;
         color: white;
@@ -501,6 +506,7 @@ $pcol:#bcbbbb;
         box-shadow: none !important;
         transition: 0.4s;
         border-radius: 3px;
+
         &:hover {
           background-color: white !important;
           color: $colr !important;
@@ -511,43 +517,48 @@ $pcol:#bcbbbb;
 }
 
 //Contact Us
-.contact-us{
+.contact-us {
   padding: 10px 0;
   margin: 15px 0;
-  .row{
-    .col-md-6{
+
+  .row {
+    .col-md-6 {
       padding: 8px;
-      h1{
+
+      h1 {
         color: $colr;
         font-weight: bolder;
         text-align: center;
         border-bottom: 2px solid $colr;
         border-radius: 40%;
       }
+
       form {
-        label{
+        label {
           padding: 5px 0;
           font-weight: bold;
         }
-          input,textarea {
-            box-shadow: none !important;
-            padding: 10px;
-            font-weight: bold;
-            transition: 0.2s;
 
-            &:focus {
-              border-color: $colr !important;
-            }
+        input, textarea {
+          box-shadow: none !important;
+          padding: 10px;
+          font-weight: bold;
+          transition: 0.2s;
 
-            ::placeholder {
-              font-weight: bold;
-            }
+          &:focus {
+            border-color: $colr !important;
           }
+
+          ::placeholder {
+            font-weight: bold;
+          }
+        }
 
         .contact-submit {
           text-align: right;
           padding: 5px 0;
           margin-top: 10px;
+
           button {
             width: 180px;
             background-color: $colr !important;
@@ -572,38 +583,45 @@ $pcol:#bcbbbb;
 }
 
 //Footer
-.footer{
+.footer {
   background-color: black;
   color: white;
   //font-weight: bold;
   padding: 15px 0;
-  .row{
-    .col-md-8{
-      .list-link{
+
+  .row {
+    .col-md-8 {
+      .list-link {
         text-align: center;
         border-bottom: 1px solid lightgray;
         margin: 5px 0;
-        ul{
+
+        ul {
           padding: 0;
-          li{
+
+          li {
             list-style: none;
             display: inline-block;
             padding: 5px 20px;
-            a{
+
+            a {
               text-decoration: none;
               color: white;
               font-size: 18px;
               transition: 0.3s;
-              &:hover{
+
+              &:hover {
                 color: $colr;
               }
             }
           }
         }
       }
-      .description-text{
+
+      .description-text {
         padding: 3px 0 10px 0;
-        p{
+
+        p {
           text-align: center;
           width: 90%;
           padding-bottom: 10px;
@@ -613,9 +631,11 @@ $pcol:#bcbbbb;
           border-bottom: 1px solid lightgray;
         }
       }
-      .copyright-portion{
+
+      .copyright-portion {
         text-align: center;
-        p{
+
+        p {
           font-size: 13px;
           letter-spacing: 1px;
         }
@@ -625,12 +645,12 @@ $pcol:#bcbbbb;
 }
 
 
-
 //History
-.history{
+.history {
   padding: 10px 0;
-  .row{
-    h1{
+
+  .row {
+    h1 {
       color: $colr;
       font-weight: bolder;
       text-align: center;
@@ -639,20 +659,23 @@ $pcol:#bcbbbb;
       padding: 8px 0;
       text-transform: uppercase;
     }
-    .col-md-8{
+
+    .col-md-8 {
       padding: 8px 0;
-      p{
+
+      p {
         padding: 10px;
         font-weight: bold;
         letter-spacing: 1px;
         text-align: justify;
         font-size: 14px;
         @media only screen and (max-width: 768px) {
-          padding: 0!important;
+          padding: 0 !important;
         }
       }
+
       @media only screen and (max-width: 768px) {
-        padding: 0!important;
+        padding: 0 !important;
       }
     }
   }
@@ -660,64 +683,76 @@ $pcol:#bcbbbb;
 
 
 //Our Team
-.our-team{
+.our-team {
   padding: 10px 0;
-  .our-team-heading{
+
+  .our-team-heading {
     text-align: center;
     font-weight: bold;
     color: $colr;
     text-transform: uppercase;
     padding: 10px 0;
-      border-bottom: 2px solid $colr;
-      border-radius: 40%;
-      padding: 8px 0;
-    }
-  .row{
-    .col-lg-3{
+    border-bottom: 2px solid $colr;
+    border-radius: 40%;
+    padding: 8px 0;
+  }
+
+  .row {
+    .col-lg-3 {
       border: 1px solid lightgray;
       margin: 5px 10px;
       text-align: center;
       border-radius: 5px;
-      .img-portion{
+
+      .img-portion {
         display: flex;
         justify-content: center;
         padding: 10px 0;
-        .image{
+
+        .image {
           width: 150px;
           height: 150px;
           border-radius: 50%;
           overflow: hidden;
-          img{
+
+          img {
             height: 100%;
             width: 100%;
             transition: 0.4s;
             object-fit: contain;
-            &:hover{
+
+            &:hover {
               transform: scale(1.09);
             }
           }
         }
       }
-      .text-portion{
+
+      .text-portion {
         padding: 8px 0;
-        .title{
-          h4{
+
+        .title {
+          h4 {
             font-weight: bold;
             text-transform: uppercase;
           }
         }
-        .social{
-          ul{
+
+        .social {
+          ul {
             padding: 0;
-            li{
+
+            li {
               list-style: none;
               display: inline-block;
               padding: 5px 8px;
-              a{
+
+              a {
                 color: black;
                 transition: 0.3s;
                 font-size: 25px;
-                &:hover{
+
+                &:hover {
                   color: $colr !important;
                 }
               }
@@ -731,15 +766,18 @@ $pcol:#bcbbbb;
 
 
 //Live Video
-.live-video{
+.live-video {
   padding: 15px 0;
-  .row{
-    .col-md-6{
+
+  .row {
+    .col-md-6 {
       text-align: center;
-      h1{
+
+      h1 {
         font-weight: bolder;
       }
-      video{
+
+      video {
         width: 100%;
         height: 100%;
       }
@@ -749,9 +787,10 @@ $pcol:#bcbbbb;
 
 
 //Services
-.our-services{
+.our-services {
   padding: 15px 0;
-  h1{
+
+  h1 {
     color: $colr;
     font-weight: bolder;
     text-align: center;
@@ -760,11 +799,13 @@ $pcol:#bcbbbb;
     padding: 8px 0;
     text-transform: uppercase;
   }
-  .row{
-    .col-md-6{
+
+  .row {
+    .col-md-6 {
       padding: 10px 0;
       text-align: center;
-      img{
+
+      img {
         height: 300px;
       }
     }
@@ -772,23 +813,22 @@ $pcol:#bcbbbb;
 }
 
 
-
-
 //User Account
-.profile-body{
+.profile-body {
   background-color: #f5f4f4;
   user-select: none;
 
   //Personal Details
-  .personal-details{
+  .personal-details {
     padding: 20px 0;
     border-bottom: 1px solid $pcol;
     margin-bottom: 10px;
     font-weight: bold;
-    .row{
-      .col-md{
-        &:last-child{
-          @media only screen and (max-width: 768px){
+
+    .row {
+      .col-md {
+        &:last-child {
+          @media only screen and (max-width: 768px) {
             width: 90% !important;
             margin: 0 auto;
           }
@@ -796,21 +836,26 @@ $pcol:#bcbbbb;
           padding: 30px 10px;
           border-radius: 7px;
         }
+
         margin-top: 20px;
-        .form-group{
-          label{
+
+        .form-group {
+          label {
             margin: 12px 0 5px 0;
           }
-          input{
+
+          input {
             box-shadow: none !important;
             padding: 10px;
             font-size: 16px;
             font-weight: bold;
-            &:focus{
+
+            &:focus {
               border-color: $colr;
             }
           }
-          button{
+
+          button {
             background-color: #1dbf73;
             color: white !important;
             border: 2px solid $colr;
@@ -824,24 +869,28 @@ $pcol:#bcbbbb;
             margin-right: 10px;
             margin-bottom: 10px;
             box-shadow: none !important;
-            &:hover{
+
+            &:hover {
               background-color: white;
               color: $colr !important;
             }
           }
         }
-        h4{
+
+        h4 {
           margin-top: 20px;
           text-transform: capitalize;
         }
-        p{
+
+        p {
           text-transform: capitalize;
         }
+
         @media only screen and (max-width: 768px) {
-          h4{
+          h4 {
             margin-top: 0 !important;
           }
-          h4,p{
+          h4, p {
             text-align: center;
           }
         }
@@ -851,49 +900,57 @@ $pcol:#bcbbbb;
 
 
   //Profile Picture
-  .p-picture{
+  .p-picture {
     padding: 20px 0;
     border-bottom: 1px solid $pcol;
     margin-bottom: 10px;
     font-weight: bold;
-    .row{
-      .col-md{
-        .img-shower{
+
+    .row {
+      .col-md {
+        .img-shower {
           width: 100px;
           height: 100px;
           border-radius: 50%;
           margin: 0 auto;
-          img{
+
+          img {
             height: 100%;
             width: 100%;
             border-radius: 50%;
             object-fit: cover;
           }
         }
-        &:last-child{
-          @media only screen and (max-width: 768px){
+
+        &:last-child {
+          @media only screen and (max-width: 768px) {
             width: 90% !important;
             margin: 0 auto;
           }
-          padding: 10px 10px 20px ;
+          padding: 10px 10px 20px;
           background-color: white;
           border-radius: 7px;
         }
+
         margin-top: 20px;
-        .form-group{
-          label{
+
+        .form-group {
+          label {
             margin: 12px 0 5px 0;
           }
-          input{
+
+          input {
             box-shadow: none !important;
             padding: 10px;
             font-size: 16px;
             font-weight: bold;
-            &:focus{
+
+            &:focus {
               border-color: $colr;
             }
           }
-          button{
+
+          button {
             background-color: #1dbf73;
             color: white !important;
             border: 2px solid $colr;
@@ -907,24 +964,28 @@ $pcol:#bcbbbb;
             margin-right: 10px;
             margin-bottom: 10px;
             box-shadow: none !important;
-            &:hover{
+
+            &:hover {
               background-color: white;
               color: $colr !important;
             }
           }
         }
-        h4{
+
+        h4 {
           margin-top: 30px;
           text-transform: capitalize;
         }
-        p{
+
+        p {
           text-transform: capitalize;
         }
+
         @media only screen and (max-width: 768px) {
-          h4{
+          h4 {
             margin-top: 0 !important;
           }
-          h4,p{
+          h4, p {
             text-align: center;
           }
         }
@@ -934,35 +995,41 @@ $pcol:#bcbbbb;
 
 
   //Update Password
-  .update-pass{
+  .update-pass {
     padding: 20px 0;
     font-weight: bold;
-    .row{
-      .col-md{
-        &:last-child{
-          @media only screen and (max-width: 768px){
+
+    .row {
+      .col-md {
+        &:last-child {
+          @media only screen and (max-width: 768px) {
             width: 90% !important;
             margin: 0 auto;
           }
-          padding: 10px 10px 20px ;
+          padding: 10px 10px 20px;
           background-color: white;
           border-radius: 7px;
         }
+
         margin-top: 20px;
-        .form-group{
-          label{
+
+        .form-group {
+          label {
             margin: 12px 0 5px 0;
           }
-          input{
+
+          input {
             box-shadow: none !important;
             padding: 10px;
             font-size: 16px;
             font-weight: bold;
-            &:focus{
+
+            &:focus {
               border-color: $colr;
             }
           }
-          button{
+
+          button {
             background-color: #1dbf73;
             color: white !important;
             border: 2px solid $colr;
@@ -976,56 +1043,66 @@ $pcol:#bcbbbb;
             margin-right: 10px;
             margin-bottom: 10px;
             box-shadow: none !important;
-            &:hover{
+
+            &:hover {
               background-color: white;
               color: $colr !important;
             }
           }
         }
-        h4{
+
+        h4 {
           margin-top: 30px;
           text-transform: capitalize;
         }
-        p{
+
+        p {
           text-transform: capitalize;
         }
+
         @media only screen and (max-width: 768px) {
-          h4{
+          h4 {
             margin-top: 0 !important;
           }
-          h4,p{
+          h4, p {
             text-align: center;
           }
         }
       }
     }
   }
+
   //<!--Delete Account-->
-  .delete-acc{
+  .delete-acc {
     padding: 20px 0;
     border-bottom: 1px solid $pcol;
     font-weight: bold;
-    .row{
-      .col-md{
-        &:last-child{
-          @media only screen and (max-width: 768px){
+
+    .row {
+      .col-md {
+        &:last-child {
+          @media only screen and (max-width: 768px) {
             width: 90% !important;
             margin: 0 auto;
           }
           padding: 15px;
           background-color: white;
           border-radius: 7px;
-          p{
+
+          p {
             text-align: justify;
             text-transform: capitalize;
           }
         }
+
         margin-top: 20px;
-        .form-group{
-          label{
+
+        .form-group {
+          label {
             margin: 12px 0 5px 0;
           }
-          button{
+
+          button {
             color: white !important;
             border-radius: 6px;
             text-transform: capitalize;
@@ -1037,18 +1114,21 @@ $pcol:#bcbbbb;
             box-shadow: none !important;
           }
         }
-        h4{
+
+        h4 {
           margin-top: 30px;
           text-transform: capitalize;
         }
-        p{
+
+        p {
           text-transform: capitalize;
         }
+
         @media only screen and (max-width: 768px) {
-          h4{
+          h4 {
             margin-top: 0 !important;
           }
-          h4,p{
+          h4, p {
             text-align: center;
           }
         }
@@ -1057,3 +1137,68 @@ $pcol:#bcbbbb;
   }
 }
 
+
+//Dashboard
+.dashboard {
+  .container-fluid {
+    padding-left: 0!important;
+    .side-menu {
+      border-right: 1px solid grey;
+      //border-top: 1px solid grey;
+      min-height: 400px;
+      height: 100%;
+      background-color: #efeeee;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      ul{
+        padding: 0;
+        li{
+          list-style: none;
+          padding: 15px;
+          &:hover{
+            a{
+              color: $colr !important;
+            }
+          }
+          a{
+            transition: 0.4s;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            @media only screen and (max-width: 576px) {
+              font-size: 14px;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+    #user{
+      padding: 10px 5px;
+      margin: 8px 0;
+      table{
+        tr{
+          td{
+            text-align: center;
+            font-weight: 900 !important;
+            .img-table{
+              margin: 0 auto;
+              height: 50px;
+              width: 50px;
+              border-radius: 50%;
+              img{
+                height: 100%;
+                width: 100%;
+                object-fit: fill;
+                border-radius: 50%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

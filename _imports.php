@@ -62,7 +62,7 @@ function get_header(){
                     <a class="nav-link" href="livecam.php"><i class="bi bi-webcam-fill"></i> Live Cam</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="service.php"><i class="bi bi-info-circle"></i> Services</a>
+                    <a class="nav-link" href="blog.php"><i class="bi bi-info-circle"></i> Blog</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link" id="navbarDropdown" role="button"
@@ -72,7 +72,6 @@ function get_header(){
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="profile.php">View Profile</a></li>
                         <li><a class="dropdown-item" href="_logout.php">Logout</a></li>
-                        <li><a class="dropdown-item" href="#">Change Password</a></li>
                     </ul>
                 </li>
             </ul>
@@ -132,7 +131,7 @@ function get_footer(){
                     <ul>
                         <li><a href="livecam.php"><i class="bi bi-webcam-fill"></i> Live Cam</a></li>
                         <li><a href="service.php"><i class="bi bi-info-circle"></i> Services</a></li>
-                        <li><a href="#"><i class="far fa-question-circle"></i> Faq\'s</a></li>
+                        <li><a href="faqs.php"><i class="far fa-question-circle"></i> Faq\'s</a></li>
                         <li><a href="about.php"><i class="bi bi-info"></i> About</a></li>
                     </ul>
                 </div>

@@ -10,11 +10,14 @@ if ($conn) {
             $uname = $data["name"];
             $uemail = $data["email"];
             $uimage = $data["image_path"];
+            $dashboard=$data["dashboard"];
         }
     }
     if (isset($_POST["delete_acc"])) {
         $delete_account = "DELETE FROM `register_sgm` WHERE id = " . $id;
         if (mysqli_query($conn, $delete_account)) {
+            session_unset();
+            session_destroy();
             header("location:index.php");
         }
     }
@@ -102,7 +105,29 @@ if ($conn) {
             </div>
         </section>
 
-
+<?php if ($dashboard=="yes"){
+    ?>
+        <!--Dashboard-->
+        <section class="delete-acc">
+            <div class="row">
+                <div class="col-md">
+                    <h4>Dashboard</h4>
+                    <p>You're An Admin.</p>
+                </div>
+                <div class="col-md shadow-sm">
+                    <form action="profile.php" method="post" class="form-group">
+                        <p>Access The Dashboard & Do All The Major Operations For The Site. You Can Control Everything There.</p>
+                        <div class="del-btn-acc text-end">
+                            <a href="dashboard.php" class="btn btn-outline-primary">Dashboard</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+<?php
+}
+else{
+?>
         <!--Delete Account-->
         <section class="delete-acc">
             <div class="row">
@@ -123,6 +148,7 @@ if ($conn) {
             </div>
         </section>
     </div>
+    <?php } ?>
 
 </section>
 

@@ -1141,7 +1141,8 @@ $pcol: #bcbbbb;
 //Dashboard
 .dashboard {
   .container-fluid {
-    padding-left: 0!important;
+    padding-left: 0 !important;
+
     .side-menu {
       border-right: 1px solid grey;
       //border-top: 1px solid grey;
@@ -1152,17 +1153,21 @@ $pcol: #bcbbbb;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      ul{
+
+      ul {
         padding: 0;
-        li{
+
+        li {
           list-style: none;
           padding: 15px;
-          &:hover{
-            a{
+
+          &:hover {
+            a {
               color: $colr !important;
             }
           }
-          a{
+
+          a {
             transition: 0.4s;
             color: black;
             font-size: 20px;
@@ -1176,29 +1181,371 @@ $pcol: #bcbbbb;
         }
       }
     }
-    #user{
+
+    #user {
       padding: 10px 5px;
       margin: 8px 0;
-      table{
-        tr{
-          td{
+
+      .heading-users {
+        text-align: center;
+        padding: 10px 0;
+
+        h1 {
+          color: $colr;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+      }
+
+      table {
+        tr {
+          td {
             text-align: center;
             font-weight: 900 !important;
-            .img-table{
+
+            .img-table {
               margin: 0 auto;
               height: 50px;
               width: 50px;
               border-radius: 50%;
-              img{
+
+              img {
                 height: 100%;
                 width: 100%;
-                object-fit: fill;
+                object-fit: contain;
                 border-radius: 50%;
+              }
+            }
+
+            .btn-success {
+              color: white !important;
+              background-color: $colr;
+              text-transform: capitalize;
+              font-weight: bold;
+              border: 1px solid $colr;
+              font-size: 16px;
+              padding: 6px 20px;
+              box-shadow: none !important;
+
+              &:hover {
+                background-color: white !important;
+                color: $colr !important;
+              }
+            }
+
+            .btn-danger {
+              color: white !important;
+              background-color: #f34a4a;
+              text-transform: capitalize;
+              font-weight: bold;
+              border: 1px solid #f34a4a;
+              font-size: 16px;
+              padding: 6px 20px;
+              box-shadow: none !important;
+
+              &:hover {
+                background-color: white !important;
+                color: #f34a4a !important;
               }
             }
           }
         }
       }
     }
+
+    #add-admin {
+      .row {
+        .col-10 {
+          p {
+            font-weight: bold;
+            text-align: center;
+          }
+
+          h1 {
+            text-align: center;
+            color: $colr;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+
+          form {
+            .input-group {
+              padding: 8px 0;
+              margin: 5px 0;
+
+              .input-group-text {
+                background-color: white;
+                transition: 0.4s;
+
+                &:hover {
+                  background-color: $colr;
+                  color: white;
+                }
+
+                color: $colr;
+                font-weight: bold;
+              }
+
+              input {
+                box-shadow: none !important;
+                padding: 10px 5px;
+                font-weight: bold;
+                transition: 0.2s;
+
+                &:focus {
+                  border-color: $colr !important;
+                }
+
+                ::placeholder {
+                  font-weight: bold;
+                }
+              }
+            }
+
+            .submit_btn {
+              text-align: right;
+              padding: 5px 0;
+
+              button {
+                width: 120px;
+                background-color: $colr !important;
+                color: white;
+                border: 2px solid $colr;
+                font-weight: bold;
+                padding: 6px 0;
+                box-shadow: none !important;
+                transition: 0.4s;
+
+                &:hover {
+                  background-color: white !important;
+                  color: $colr !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #blog-post {
+      .row {
+        .col-10 {
+          h1 {
+            text-align: center;
+            color: $colr;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+
+          form {
+            .form-group {
+              padding: 8px 0;
+              margin: 5px 0;
+
+              .form-text {
+                font-weight: bold;
+              }
+
+              input, textarea {
+                box-shadow: none !important;
+                padding: 10px 5px;
+                font-weight: bold;
+                transition: 0.2s;
+
+                &:focus {
+                  border-color: $colr !important;
+                }
+
+                ::placeholder {
+                  font-weight: bold;
+                }
+              }
+            }
+
+            .submit_btn {
+              text-align: right;
+              padding: 5px 0;
+
+              button {
+                width: 120px;
+                background-color: $colr !important;
+                color: white;
+                border: 2px solid $colr;
+                font-weight: bold;
+                padding: 6px 0;
+                box-shadow: none !important;
+                transition: 0.4s;
+
+                &:hover {
+                  background-color: white !important;
+                  color: $colr !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.blog-post {
+  margin: 20px 0;
+  padding: 10px 0;
+
+  .heading-blog {
+    text-align: center;
+    color: $colr;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .row-cols-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .col-10 {
+      border-radius: 5px;
+      border: 1px solid lightgrey;
+      margin: 10px;
+      padding: 15px;
+
+      h1 {
+        text-align: center;
+        font-size: 35px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      h6 {
+        span {
+          color: $colr;
+          font-weight: bold;
+        }
+
+        text-align: center;
+      }
+
+      h5 {
+        font-weight: bold;
+        color: firebrick;
+        text-align: center;
+      }
+
+      p {
+        text-align: justify;
+      }
+    }
+  }
+}
+
+//Faq Page
+.faq {
+  margin: 5px 0 10px 0;
+  padding: 10px 0;
+
+  .faq-heading {
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+    color: #34d479;
+    border-bottom: 2px solid #34d479;
+  }
+
+  .col-10 {
+    margin: 15px 0;
+    padding: 15px 5px;
+    transition: 0.4s all;
+
+    &:nth-child(2), &:nth-child(5) {
+      margin: 15px 0;
+      padding: 15px 5px;
+      transition: 0.4s all;
+      transform: scale(1.09);
+
+      &:hover {
+        transform: scale(0.9);
+      }
+
+      .box {
+        background-color: black;
+
+        h4 {
+          color: white;
+        }
+
+        p {
+          color: #a2a2a2;
+        }
+      }
+    }
+
+    .box {
+      //max-height: 350px;
+      min-height: 330px;
+      background-color: rgb(236, 236, 236);
+      border-radius: 8px;
+      border: 1px solid lightgray;
+      padding: 10px;
+
+      h4 {
+        text-align: center;
+        color: black;
+        padding-top: 20px;
+        font-weight: bold;
+        font-size: 30px;
+        text-transform: capitalize;
+      }
+
+      p {
+        text-align: center;
+        padding-top: 20px;
+        padding: 10px;
+        color: rgb(85, 84, 84);
+        font-weight: bold;
+        font-size: 15px;
+        text-transform: capitalize;
+      }
+
+      .social {
+        a {
+          font-size: 40px;
+        }
+
+        i[class="fab fa-facebook"] {
+          color: blue;
+          transition: 0.5s;
+
+          &:hover {
+            transform: rotate(360deg);
+          }
+        }
+
+        i[class="fab fa-whatsapp"] {
+          color: #25d366;
+          transition: 0.5s;
+
+          &:hover {
+            transform: rotate(360deg);
+          }
+        }
+
+        i[class="fab fa-twitter"] {
+          color: #1da1f2;
+          transition: 0.5s;
+
+          &:hover {
+            transform: rotate(360deg);
+          }
+        }
+      }
+
+    }
+
   }
 }

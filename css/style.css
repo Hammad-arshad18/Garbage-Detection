@@ -939,6 +939,15 @@
   padding: 10px 5px;
   margin: 8px 0;
 }
+.dashboard .container-fluid #user .heading-users {
+  text-align: center;
+  padding: 10px 0;
+}
+.dashboard .container-fluid #user .heading-users h1 {
+  color: #34d479;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 .dashboard .container-fluid #user table tr td {
   text-align: center;
   font-weight: 900 !important;
@@ -952,8 +961,262 @@
 .dashboard .container-fluid #user table tr td .img-table img {
   height: 100%;
   width: 100%;
-  object-fit: fill;
+  object-fit: contain;
   border-radius: 50%;
+}
+.dashboard .container-fluid #user table tr td .btn-success {
+  color: white !important;
+  background-color: #34d479;
+  text-transform: capitalize;
+  font-weight: bold;
+  border: 1px solid #34d479;
+  font-size: 16px;
+  padding: 6px 20px;
+  box-shadow: none !important;
+}
+.dashboard .container-fluid #user table tr td .btn-success:hover {
+  background-color: white !important;
+  color: #34d479 !important;
+}
+.dashboard .container-fluid #user table tr td .btn-danger {
+  color: white !important;
+  background-color: #f34a4a;
+  text-transform: capitalize;
+  font-weight: bold;
+  border: 1px solid #f34a4a;
+  font-size: 16px;
+  padding: 6px 20px;
+  box-shadow: none !important;
+}
+.dashboard .container-fluid #user table tr td .btn-danger:hover {
+  background-color: white !important;
+  color: #f34a4a !important;
+}
+.dashboard .container-fluid #add-admin .row .col-10 p {
+  font-weight: bold;
+  text-align: center;
+}
+.dashboard .container-fluid #add-admin .row .col-10 h1 {
+  text-align: center;
+  color: #34d479;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.dashboard .container-fluid #add-admin .row .col-10 form .input-group {
+  padding: 8px 0;
+  margin: 5px 0;
+}
+.dashboard .container-fluid #add-admin .row .col-10 form .input-group .input-group-text {
+  background-color: white;
+  transition: 0.4s;
+  color: #34d479;
+  font-weight: bold;
+}
+.dashboard .container-fluid #add-admin .row .col-10 form .input-group .input-group-text:hover {
+  background-color: #34d479;
+  color: white;
+}
+.dashboard .container-fluid #add-admin .row .col-10 form .input-group input {
+  box-shadow: none !important;
+  padding: 10px 5px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+.dashboard .container-fluid #add-admin .row .col-10 form .input-group input:focus {
+  border-color: #34d479 !important;
+}
+.dashboard .container-fluid #add-admin .row .col-10 form .input-group input ::placeholder {
+  font-weight: bold;
+}
+.dashboard .container-fluid #add-admin .row .col-10 form .submit_btn {
+  text-align: right;
+  padding: 5px 0;
+}
+.dashboard .container-fluid #add-admin .row .col-10 form .submit_btn button {
+  width: 120px;
+  background-color: #34d479 !important;
+  color: white;
+  border: 2px solid #34d479;
+  font-weight: bold;
+  padding: 6px 0;
+  box-shadow: none !important;
+  transition: 0.4s;
+}
+.dashboard .container-fluid #add-admin .row .col-10 form .submit_btn button:hover {
+  background-color: white !important;
+  color: #34d479 !important;
+}
+.dashboard .container-fluid #blog-post .row .col-10 h1 {
+  text-align: center;
+  color: #34d479;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.dashboard .container-fluid #blog-post .row .col-10 form .form-group {
+  padding: 8px 0;
+  margin: 5px 0;
+}
+.dashboard .container-fluid #blog-post .row .col-10 form .form-group .form-text {
+  font-weight: bold;
+}
+.dashboard .container-fluid #blog-post .row .col-10 form .form-group input, .dashboard .container-fluid #blog-post .row .col-10 form .form-group textarea {
+  box-shadow: none !important;
+  padding: 10px 5px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+.dashboard .container-fluid #blog-post .row .col-10 form .form-group input:focus, .dashboard .container-fluid #blog-post .row .col-10 form .form-group textarea:focus {
+  border-color: #34d479 !important;
+}
+.dashboard .container-fluid #blog-post .row .col-10 form .form-group input ::placeholder, .dashboard .container-fluid #blog-post .row .col-10 form .form-group textarea ::placeholder {
+  font-weight: bold;
+}
+.dashboard .container-fluid #blog-post .row .col-10 form .submit_btn {
+  text-align: right;
+  padding: 5px 0;
+}
+.dashboard .container-fluid #blog-post .row .col-10 form .submit_btn button {
+  width: 120px;
+  background-color: #34d479 !important;
+  color: white;
+  border: 2px solid #34d479;
+  font-weight: bold;
+  padding: 6px 0;
+  box-shadow: none !important;
+  transition: 0.4s;
+}
+.dashboard .container-fluid #blog-post .row .col-10 form .submit_btn button:hover {
+  background-color: white !important;
+  color: #34d479 !important;
+}
+
+.blog-post {
+  margin: 20px 0;
+  padding: 10px 0;
+}
+.blog-post .heading-blog {
+  text-align: center;
+  color: #34d479;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.blog-post .row-cols-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.blog-post .row-cols-1 .col-10 {
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  margin: 10px;
+  padding: 15px;
+}
+.blog-post .row-cols-1 .col-10 h1 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.blog-post .row-cols-1 .col-10 h6 {
+  text-align: center;
+}
+.blog-post .row-cols-1 .col-10 h6 span {
+  color: #34d479;
+  font-weight: bold;
+}
+.blog-post .row-cols-1 .col-10 h5 {
+  font-weight: bold;
+  color: firebrick;
+  text-align: center;
+}
+.blog-post .row-cols-1 .col-10 p {
+  text-align: justify;
+}
+
+.faq {
+  margin: 5px 0 10px 0;
+  padding: 10px 0;
+}
+.faq .faq-heading {
+  text-align: center;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: bold;
+  color: #34d479;
+  border-bottom: 2px solid #34d479;
+}
+.faq .col-10 {
+  margin: 15px 0;
+  padding: 15px 5px;
+  transition: 0.4s all;
+}
+.faq .col-10:nth-child(2), .faq .col-10:nth-child(5) {
+  margin: 15px 0;
+  padding: 15px 5px;
+  transition: 0.4s all;
+  transform: scale(1.09);
+}
+.faq .col-10:nth-child(2):hover, .faq .col-10:nth-child(5):hover {
+  transform: scale(0.9);
+}
+.faq .col-10:nth-child(2) .box, .faq .col-10:nth-child(5) .box {
+  background-color: black;
+}
+.faq .col-10:nth-child(2) .box h4, .faq .col-10:nth-child(5) .box h4 {
+  color: white;
+}
+.faq .col-10:nth-child(2) .box p, .faq .col-10:nth-child(5) .box p {
+  color: #a2a2a2;
+}
+.faq .col-10 .box {
+  min-height: 330px;
+  background-color: #ececec;
+  border-radius: 8px;
+  border: 1px solid lightgray;
+  padding: 10px;
+}
+.faq .col-10 .box h4 {
+  text-align: center;
+  color: black;
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+.faq .col-10 .box p {
+  text-align: center;
+  padding-top: 20px;
+  padding: 10px;
+  color: #555454;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.faq .col-10 .box .social a {
+  font-size: 40px;
+}
+.faq .col-10 .box .social i[class="fab fa-facebook"] {
+  color: blue;
+  transition: 0.5s;
+}
+.faq .col-10 .box .social i[class="fab fa-facebook"]:hover {
+  transform: rotate(360deg);
+}
+.faq .col-10 .box .social i[class="fab fa-whatsapp"] {
+  color: #25d366;
+  transition: 0.5s;
+}
+.faq .col-10 .box .social i[class="fab fa-whatsapp"]:hover {
+  transform: rotate(360deg);
+}
+.faq .col-10 .box .social i[class="fab fa-twitter"] {
+  color: #1da1f2;
+  transition: 0.5s;
+}
+.faq .col-10 .box .social i[class="fab fa-twitter"]:hover {
+  transform: rotate(360deg);
 }
 
 /*# sourceMappingURL=style.css.map */
